@@ -1,0 +1,65 @@
+{
+  "task": "heart",
+  "model": "SVC",
+  "stage": "tuned",
+  "features": [
+    "cp",
+    "thalach",
+    "oldpeak",
+    "thal"
+  ],
+  "parameters": {
+    "classifier__C": 1,
+    "classifier__break_ties": false,
+    "classifier__cache_size": 200,
+    "classifier__class_weight": "balanced",
+    "classifier__coef0": 0.0,
+    "classifier__decision_function_shape": "ovr",
+    "classifier__degree": 3,
+    "classifier__gamma": 0.01,
+    "classifier__kernel": "rbf",
+    "classifier__max_iter": -1,
+    "classifier__probability": false,
+    "classifier__random_state": 42,
+    "classifier__shrinking": true,
+    "classifier__tol": 0.001,
+    "classifier__verbose": false
+  },
+  "cv_accuracy": 0.7931972789115647,
+  "cv_accuracy_std": 0.0402836916258264,
+  "test_used_for_selection": false,
+  "test_accuracy": 0.8688524590163934,
+  "correct": 53,
+  "test_records": 61,
+  "test_accuracy_wilson_95": [
+    0.7619811980700654,
+    0.932019227250999
+  ],
+  "precision": 0.8333333333333334,
+  "recall": 0.8928571428571429,
+  "f1": 0.8620689655172413,
+  "roc_auc": 0.935064935064935,
+  "confusion_matrix": [
+    [
+      28,
+      5
+    ],
+    [
+      3,
+      25
+    ]
+  ],
+  "development_records": 242,
+  "total_records": 303,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "raw_data_sha256": "a74b7efa387bc9d108d7d0115d831fe9b414b29ae7124f331b622b4efa0427c8",
+  "deployment_policy": "serve_evaluated_pipeline",
+  "full_data_refit": false,
+  "artifact_sha256": "b4c509696de62b4b6bbb1aa687640881fb9256e2ed9073a69b314235450b84be"
+}

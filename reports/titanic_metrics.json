@@ -1,0 +1,65 @@
+{
+  "task": "titanic",
+  "model": "SVC",
+  "stage": "tuned",
+  "features": [
+    "PClass",
+    "Gender",
+    "Sibling",
+    "Embarked"
+  ],
+  "parameters": {
+    "classifier__C": 0.1,
+    "classifier__break_ties": false,
+    "classifier__cache_size": 200,
+    "classifier__class_weight": null,
+    "classifier__coef0": 0.0,
+    "classifier__decision_function_shape": "ovr",
+    "classifier__degree": 3,
+    "classifier__gamma": "scale",
+    "classifier__kernel": "linear",
+    "classifier__max_iter": -1,
+    "classifier__probability": false,
+    "classifier__random_state": 42,
+    "classifier__shrinking": true,
+    "classifier__tol": 0.001,
+    "classifier__verbose": false
+  },
+  "cv_accuracy": 0.7625,
+  "cv_accuracy_std": 0.09999999999999999,
+  "test_used_for_selection": false,
+  "test_accuracy": 0.65,
+  "correct": 13,
+  "test_records": 20,
+  "test_accuracy_wilson_95": [
+    0.43285427668523624,
+    0.818808175898918
+  ],
+  "precision": 0.7142857142857143,
+  "recall": 0.5,
+  "f1": 0.5882352941176471,
+  "roc_auc": 0.565,
+  "confusion_matrix": [
+    [
+      8,
+      2
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  "development_records": 80,
+  "total_records": 100,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "raw_data_sha256": "a63e6a9e933cb459d24855705addc6161b26970070444a5bee7d879e915731a8",
+  "deployment_policy": "serve_evaluated_pipeline",
+  "full_data_refit": false,
+  "artifact_sha256": "8530b7f56185a63e88a0527dd032b2025c7c584b70581cbe90a6dfe7c0cefb69"
+}
